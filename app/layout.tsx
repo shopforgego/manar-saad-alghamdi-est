@@ -11,7 +11,7 @@ const _geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 const _notoKufiArabic = Noto_Kufi_Arabic({ subsets: ["arabic"], variable: "--font-noto-kufi-arabic", weight: ["300", "400", "500", "600", "700"] });
 
-const siteUrl = "https://manar-saad-alghamdi-est.shopforgego.com"
+const siteUrl = "https://manar.protosoft.cloud"
 const ogImageAbsolute = `${siteUrl}/og-image.jpg`
 
 export const metadata: Metadata = {
