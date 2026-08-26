@@ -13,9 +13,9 @@ const _notoKufiArabic = Noto_Kufi_Arabic({ subsets: ["arabic"], variable: "--fon
 
 export const metadata: Metadata = {
   title: 'MANAR SAAD ALGHAMDI Est. | مؤسسة منار سعد الغامدي التجارية',
-  description: 'مؤسسة منار سعد الغامدي التجارية - وجهتك الأولى لأحدث الأحذية وحقائب السفر والإكسسوارات الفاخرة في المملكة العربية السعودية | MANAR SAAD ALGHAMDI Establishment Commercial',
+  description: 'مؤسسة منار سعد الغامدي التجارية - وجهتك الأولى لأحدث صيحات الأزياء والملابس، الأحذية الرياضية والكاجوال، وحقائب السفر والإكسسوارات الفاخرة في المملكة العربية السعودية | MANAR SAAD ALGHAMDI Establishment Commercial',
   generator: 'Next.js',
-  keywords: ['أحذية', 'حقائب سفر', 'إكسسوارات', 'أحذية رياضية', 'شنط سفر', 'shoes', 'bags', 'luggage', 'accessories', 'Jeddah', 'Saudi Arabia', 'جدة', 'سعودية'],
+  keywords: ['ملابس', 'أزياء', 'فساتين', 'ملابس رياضية', 'ملابس أطفال', 'أحذية', 'حقائب سفر', 'إكسسوارات', 'حقائب يد', 'fashion', 'clothing', 'shoes', 'bags', 'luggage', 'accessories', 'Jeddah', 'Saudi Arabia', 'جدة', 'سعودية'],
   icons: {
     icon: '/icon.svg',
     apple: '/apple-icon.png',

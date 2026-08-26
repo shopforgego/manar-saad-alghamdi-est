@@ -85,18 +85,23 @@ export function SiteFooter() {
             </h3>
             <ul className="flex flex-col gap-3">
               <li>
+                <Link href="/products?category=clothing" className="text-sm text-muted-foreground transition-colors hover:text-accent">
+                  {t({ ar: "ملابس وأزياء", en: "Fashion & Clothing" })}
+                </Link>
+              </li>
+              <li>
                 <Link href="/products?category=shoes" className="text-sm text-muted-foreground transition-colors hover:text-accent">
-                  {t({ ar: "أحذية رجالية", en: "Men's Shoes" })}
+                  {t({ ar: "أحذية رجالية ورياضية", en: "Shoes & Footwear" })}
                 </Link>
               </li>
               <li>
                 <Link href="/products?category=bags" className="text-sm text-muted-foreground transition-colors hover:text-accent">
-                  {t({ ar: "حقائب سفر", en: "Travel Bags" })}
+                  {t({ ar: "حقائب سفر", en: "Travel Luggage" })}
                 </Link>
               </li>
               <li>
                 <Link href="/products?category=accessories" className="text-sm text-muted-foreground transition-colors hover:text-accent">
-                  {t({ ar: "إكسسوارات", en: "Accessories" })}
+                  {t({ ar: "إكسسوارات وحقائب يد", en: "Accessories & Handbags" })}
                 </Link>
               </li>
             </ul>

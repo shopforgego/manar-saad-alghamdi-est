@@ -30,22 +30,22 @@ export function HeroSection() {
 
             <h1 className="text-balance text-4xl font-black leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
               {t({
-                ar: "أرقى تشكيلات الأحذية",
-                en: "Exclusive Footwear &",
+                ar: "أرقى تشكيلات الأزياء والملابس",
+                en: "Exclusive Fashion, Apparel &",
               })}
               <br />
               <span className="bg-gradient-to-r from-emerald-600 via-teal-500 to-amber-500 bg-clip-text text-transparent dark:from-emerald-400 dark:via-teal-300 dark:to-amber-400">
                 {t({
-                  ar: "وحقائب السفر الفاخرة",
-                  en: "Premium Travel Bags",
+                  ar: "والأحذية وحقائب السفر الفاخرة",
+                  en: "Footwear, Luggage & Luxury Bags",
                 })}
               </span>
             </h1>
 
             <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
               {t({
-                ar: `مرحباً بكم في ${STORE_INFO.name.ar}. وجهتك الموثوقة لأحدث الأحذية الرياضية والكاجوال وشنط السفر العصرية بأعلى معايير الجودة وبأفضل الأسعار.`,
-                en: `Welcome to ${STORE_INFO.name.en}. Your trusted destination for modern footwear and premium luggage at the best prices across KSA.`,
+                ar: `مرحباً بكم في ${STORE_INFO.name.ar}. وجهتك الموثوقة لأحدث صيحات الملابس النسائية والرجالية والأطفال، الأحذية الرياضية والكاجوال، وحقائب السفر والإكسسوارات الفاخرة بأعلى معايير الجودة وبأفضل الأسعار.`,
+                en: `Welcome to ${STORE_INFO.name.en}. Your premier destination for trendy fashion, athletic & casual footwear, travel luggage, and luxury accessories at the best prices across KSA.`,
               })}
             </p>
 
