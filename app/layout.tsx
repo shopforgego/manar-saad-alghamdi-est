@@ -11,14 +11,98 @@ const _geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 const _notoKufiArabic = Noto_Kufi_Arabic({ subsets: ["arabic"], variable: "--font-noto-kufi-arabic", weight: ["300", "400", "500", "600", "700"] });
 
+const siteUrl = "https://manar-saad-alghamdi-est.shopforgego.com"
+const ogImageAbsolute = `${siteUrl}/og-image.jpg`
+
 export const metadata: Metadata = {
-  title: 'MANAR SAAD ALGHAMDI Est. | مؤسسة منار سعد الغامدي التجارية',
-  description: 'مؤسسة منار سعد الغامدي التجارية - وجهتك الأولى لأحدث صيحات الأزياء والملابس، الأحذية الرياضية والكاجوال، وحقائب السفر والإكسسوارات الفاخرة في المملكة العربية السعودية | MANAR SAAD ALGHAMDI Establishment Commercial',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'مؤسسة منار سعد الغامدي التجارية | MANAR SAAD ALGHAMDI Est.',
+    template: '%s | مؤسسة منار سعد الغامدي التجارية',
+  },
+  description: 'مؤسسة منار سعد الغامدي التجارية (سجل تجاري 7054990010) — وجهتك الأولى لأحدث صيحات الأزياء والملابس، الأحذية الرياضية والكاجوال، وحقائب السفر والإكسسوارات الفاخرة في المملكة العربية السعودية مع شحن سريع ودفع إلكتروني آمن.',
   generator: 'Next.js',
-  keywords: ['ملابس', 'أزياء', 'فساتين', 'ملابس رياضية', 'ملابس أطفال', 'أحذية', 'حقائب سفر', 'إكسسوارات', 'حقائب يد', 'fashion', 'clothing', 'shoes', 'bags', 'luggage', 'accessories', 'Jeddah', 'Saudi Arabia', 'جدة', 'سعودية'],
+  applicationName: 'مؤسسة منار سعد الغامدي التجارية',
+  keywords: [
+    'مؤسسة منار سعد الغامدي التجارية',
+    'منار سعد الغامدي',
+    'متجر أزياء',
+    'ملابس نسائية',
+    'ملابس رياضية',
+    'فساتين',
+    'أحذية رجالية',
+    'أحذية رياضية',
+    'حقائب سفر',
+    'شنط سفر',
+    'إكسسوارات فاخرة',
+    'جدة',
+    'السعودية',
+    'MANAR SAAD ALGHAMDI',
+    'fashion',
+    'clothing',
+    'shoes',
+    'luggage',
+    'accessories',
+  ],
+  authors: [{ name: 'مؤسسة منار سعد الغامدي التجارية' }],
+  creator: 'مؤسسة منار سعد الغامدي التجارية',
+  publisher: 'مؤسسة منار سعد الغامدي التجارية',
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
   icons: {
-    icon: '/icon.svg',
-    apple: '/apple-icon.png',
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-light-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/og-image.jpg' },
+    ],
+    other: [
+      {
+        rel: 'image_src',
+        url: ogImageAbsolute,
+      },
+    ],
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'ar_SA',
+    url: siteUrl,
+    siteName: 'مؤسسة منار سعد الغامدي التجارية',
+    title: 'مؤسسة منار سعد الغامدي التجارية | متجر الأزياء، الأحذية وحقائب السفر',
+    description: 'تسوق أحدث صيحات الأزياء والملابس، الأحذية الرياضية وحقائب السفر الفاخرة من مؤسسة منار سعد الغامدي التجارية (س.ت: 7054990010) — شحن لجميع مدن المملكة ودفع آمن.',
+    images: [
+      {
+        url: ogImageAbsolute,
+        secureUrl: ogImageAbsolute,
+        width: 1200,
+        height: 630,
+        type: 'image/jpeg',
+        alt: 'مؤسسة منار سعد الغامدي التجارية',
+      },
+      {
+        url: `${siteUrl}/home_screenshot.png`,
+        secureUrl: `${siteUrl}/home_screenshot.png`,
+        width: 1200,
+        height: 870,
+        type: 'image/png',
+        alt: 'مؤسسة منار سعد الغامدي التجارية - واجهة المتجر',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'مؤسسة منار سعد الغامدي التجارية | متجر الأزياء، الأحذية وحقائب السفر',
+    description: 'تسوق أحدث صيحات الأزياء والملابس، الأحذية الرياضية وحقائب السفر الفاخرة من مؤسسة منار سعد الغامدي التجارية — شحن لجميع مدن المملكة ودفع آمن.',
+    images: [ogImageAbsolute],
+    creator: '@manar_alghamdi',
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 }
 
