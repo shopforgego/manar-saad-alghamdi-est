@@ -12,3 +12,7 @@ node_modules/
 
 # Markdown files
 *.md
+
+# Allow Vercel environment files to be committed
+!.env.vercel
+!.env,vercel
